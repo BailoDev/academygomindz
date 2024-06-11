@@ -26,3 +26,24 @@ function scrollHeader(){
     if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+// ================courses-carousel=============
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        900:{
+            items:2
+        },
+        1000:{
+            items:2
+        },
+        1280:{
+            items:3
+        }
+    }
+})
