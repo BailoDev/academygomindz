@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    courses-heading <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gomindz Academy</title>
     <!-- ======================================links===============================-->
-
     <!-- ======box-icons===== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!--=====remix-icons======-->
@@ -16,6 +15,9 @@
     <!-- ===========================owl-carousel========================= -->
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+    <!-- =======================Swapper JS=================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!-- =====custom-css===== -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -32,7 +34,7 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#home" class="navbar-link active-link">
+                        <a href="#home" class="navbar-link ">
                             <i class='bx bxs-home nav-icon'></i>
                             <span class="nav-name">Home</span>
                         </a>
@@ -44,7 +46,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="navbar-link">
+                        <a href="about.html" class="navbar-link">
                             <i class='bx bxs-user-pin nav-icon'></i>
                             <span class="nav-name">About</span>
                         </a>
@@ -52,11 +54,11 @@
                     <li class="nav-item">
                         <a href="#testimonial" class="navbar-link">
                             <i class='bx bxl-blogger nav-icon'></i>
-                            <span class="nav-name">Blog</span>
+                            <span class="nav-name">Testimonials</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#event" class="navbar-link">
+                        <a href="#event" class="navbar-link active-link">
                             <i class='bx bxs-message-detail nav-icon'></i>
                             <span class="nav-name">Contact</span>
                         </a>
@@ -70,10 +72,7 @@
             </div>
         </nav>
     </header>
-
-
     <!--==========================main-body==========================-->
-
     <!--===========home-section==========-->
     <section class="home" id="home">
         <div class="content-wrapper">
@@ -157,76 +156,529 @@
             </div>
         </div>
     </section>
-    
-    <!--================overview-section=====================-->
-    <!-- <section class="overview-container" id="overview">
-        <div class="overview-image">
-            <img src="./assets/images/home-imgs/profile.png" alt="Overview-imgage">
+
+    <!--========Overview-Section=========-->
+    <section class="overview" id="overview">
+        <div class="container">
+            <div class="section-heading">
+                <h6>Why Gomindz Academy</h6>
+                <h4>Jump Start Your <span>Professional Career</span></h4>
+            </div>
+            <div class="overview-content">
+                <div class="overview-carousel owl-carousel">
+                    <div class="item">
+                        <div class="overview-services">
+                            <div class="overview-img">
+                                <img src="./assets/images/logos/online-course.png" alt="service-img">
+                            </div>
+                            <h6>Industry-Deriven Curriculum</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Alias explicabo nemo expedita. Aliquam incidunt optio, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="overview-services">
+                            <div class="overview-img">
+                                <img src="./assets/images/logos/service-2.png" alt="service-img">
+                            </div>
+                            <h6>Expert Instructors</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Alias explicabo nemo expedita. Aliquam incidunt optio, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="overview-services">
+                            <div class="overview-img">
+                                <img src="./assets/images/logos/service3.png" alt="service-img">
+                            </div>
+                            <h6>Hands on Learning</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Alias explicabo nemo expedita. Aliquam incidunt optio, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="overview-services">
+                            <div class="overview-img">
+                                <img src="./assets/images/logos/service-4.png" alt="service-img">
+                            </div>
+                            <h6>Contineous Growth</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Alias explicabo nemo expedita. Aliquam incidunt optio, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="overview-services">
+                            <div class="overview-img">
+                                <img src="./assets/images/logos/service-5.png" alt="service-img">
+                            </div>
+                            <h6>Affordable Prices</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Alias explicabo nemo expedita. Aliquam incidunt optio, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="overview-services">
+                            <div class="overview-img">
+                                <img src="./assets/images/logos/service-6.png" alt="service-img">
+                            </div>
+                            <h6>Career Support</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Alias explicabo nemo expedita. Aliquam incidunt optio, 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="overview-content">
-            <h2 class="overview-header">Welcome To Gomindz Academy</h2>
-            <p>Embark on a transformative journey with Gomindz Academy that will impact your life. 
-                At Gomindz Academy we believe in power of technology to bridge the gap between the 
-                school and work force. We recognize the immense potential that lies within the vibrant 
-                youth of the Gambia. We are committed to unlocking these potentials by offering 
-                comprehensive educational programs that covers a wide range of subjects.
+    </section>
+
+    <!--=========Courses-Section=========-->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-heading col-lg-6 offset-lg-3">
+                <h4>Our <span>Programs</span></h4>
+                <p>
+                    Our courses are design to equip you with the skill and knowledge to thrive in today's
+                    tech deriven landscape.
+                </p>
+            </div>
+            <div class="courses-content">
+                <div class="courses-carousel owl-carousel owl-theme blog-post">
+                    <div class="course-content">
+                        <div class="course-img">
+                            <img src="./assets/images/courses/data-science-1.jpg" alt="course-img">
+                            <div class="ioverlay">
+                                <button>Course Content</button>
+                              </div>
+                        </div>
+                        <div class="course-title">
+                            <h4>Digital Technology</h4>
+                            <p class="para-duration">Duration: <span>12 weeks</span></p>
+                            <p class="para-pricing">
+                                Fees: <span class="canceled-price">D4,500</span>
+                                      <span class="original-price">D4,000</span>
+                            </p>
+                        </div>
+                        <div class="course-button">
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-success">
+                                  Foundation
+                                </button>
+                            </a>
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-outline-primary">
+                                  Enroll Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-img">
+                            <img src="./assets/images/courses/data-science-1.jpg" alt="course-img">
+                            <div class="ioverlay">
+                                <button>Course Content</button>
+                              </div>
+                        </div>
+                        <div class="course-title">
+                            <h4>Data Science</h4>
+                            <p class="para-duration">Duration: <span>12 weeks</span></p>
+                            <p class="para-pricing">
+                                Fees: <span class="canceled-price">D8,500</span>
+                                      <span class="original-price">D8,000</span>
+                            </p>
+                        </div>
+                        <div class="course-button">
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-primary">
+                                  Intermediate
+                                </button>
+                            </a>
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-outline-primary">
+                                  Enroll Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-img">
+                            <img src="./assets/images/courses/data-science-1.jpg" alt="course-img">
+                            <div class="ioverlay">
+                                <button>Course Content</button>
+                              </div>
+                        </div>
+                        <div class="course-title">
+                            <h4>Cyber Security</h4>
+                            <p class="para-duration">Duration: <span>12 weeks</span></p>
+                            <p class="para-pricing">
+                                Fees: <span class="canceled-price">D8,500</span>
+                                      <span class="original-price">D8,000</span>
+                            </p>
+                        </div>
+                        <div class="course-button">
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-primary">
+                                  Intermediate
+                                </button>
+                            </a>
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-outline-primary">
+                                  Enroll Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-img">
+                            <img src="./assets/images/courses/data-science-1.jpg" alt="course-img">
+                            <div class="ioverlay">
+                                <button>Course Content</button>
+                              </div>
+                        </div>
+                        <div class="course-title">
+                            <h4>Data Analytics</h4>
+                            <p class="para-duration">Duration: <span>12 weeks</span></p>
+                            <p class="para-pricing">
+                                Fees: <span class="canceled-price">D8,500</span>
+                                      <span class="original-price">D8,000</span>
+                            </p>
+                        </div>
+                        <div class="course-button">
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-primary">
+                                  Intermediate
+                                </button>
+                            </a>
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-outline-primary">
+                                  Enroll Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-img">
+                            <img src="./assets/images/courses/data-science-1.jpg" alt="course-img">
+                            <div class="ioverlay">
+                                <button>Course Content</button>
+                              </div>
+                        </div>
+                        <div class="course-title">
+                            <h4>Digital Marketing</h4>
+                            <p class="para-duration">Duration: <span>12 weeks</span></p>
+                            <p class="para-pricing">
+                                Fees: <span class="canceled-price">D8,500</span>
+                                      <span class="original-price">D8,000</span>
+                            </p>
+                        </div>
+                        <div class="course-button">
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-primary">
+                                  Intermediate
+                                </button>
+                            </a>
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-outline-primary">
+                                  Enroll Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-img">
+                            <img src="./assets/images/courses/data-science-1.jpg" alt="course-img">
+                            <div class="ioverlay">
+                                <button>Course Content</button>
+                              </div>
+                        </div>
+                        <div class="course-title">
+                            <h4>Graphic Design</h4>
+                            <p class="para-duration">Duration: <span>12 weeks</span></p>
+                            <p class="para-pricing">
+                                Fees: <span class="canceled-price">D8,500</span>
+                                      <span class="original-price">D8,000</span>
+                            </p>
+                        </div>
+                        <div class="course-button">
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-primary">
+                                  Intermediate
+                                </button>
+                            </a>
+                            <a href="https://forms.office.com/r/qEYiiK5jnF" class="button-link">
+                                <button type="button" class="btn btn-outline-primary">
+                                  Enroll Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-navigation">
+                <span class="owl-nav-prev"><i class='bx bx-skip-previous' ></i></span>
+                <span class="owl-nav-next"><i class='bx bx-skip-next'></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!--========Testimonial-Section======-->
+    <section class="testimonial" id="testimonial">
+        <div class="container">
+            <div class="section-heading col-lg-6 offset-lg-3">
+                <h4>What Do Our Students Say</h4>
+                <p>
+                    Our courses are design to equip you with the skill and knowledge to thrive in today's
+                    tech deriven landscape.
+                </p>
+            </div>
+            <div class="testimonial-content">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="testimonial-box">
+                            <img src="./assets/images/logos/quote.png" class="quote" alt="quote">
+                            <div class="testimonial-box-content">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita vel eligendi sed explicabo molestiae voluptatibus nam soluta id libero nemo ratione, sunt iste veritatis ex dignissimos est sapiente reiciendis obcaecati.
+                                </p>
+                                <div class="testimonial-box-details">
+                                    <div class="imgBx">
+                                        <img src="./assets/images/logos/service-2.png" alt="student-img">
+                                    </div>
+                                    <h5>Amadou Bailo Bah <br><span>Designer</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-box">
+                            <img src="./assets/images/logos/quote.png" class="quote" alt="quote">
+                            <div class="testimonial-box-content">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita vel eligendi sed explicabo molestiae voluptatibus nam soluta id libero nemo ratione, sunt iste veritatis ex dignissimos est sapiente reiciendis obcaecati.
+                                </p>
+                                <div class="testimonial-box-details">
+                                    <div class="imgBx">
+                                        <img src="./assets/images/logos/service-2.png" alt="student-img">
+                                    </div>
+                                    <h5>Amadou Bailo Bah <br><span>Designer</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-box">
+                            <img src="./assets/images/logos/quote.png" class="quote" alt="quote">
+                            <div class="testimonial-box-content">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita vel eligendi sed explicabo molestiae voluptatibus nam soluta id libero nemo ratione, sunt iste veritatis ex dignissimos est sapiente reiciendis obcaecati.
+                                </p>
+                                <div class="testimonial-box-details">
+                                    <div class="imgBx">
+                                        <img src="./assets/images/logos/service-2.png" alt="student-img">
+                                    </div>
+                                    <h5>Amadou Bailo Bah <br><span>Designer</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-box">
+                            <img src="./assets/images/logos/quote.png" class="quote" alt="quote">
+                            <div class="testimonial-box-content">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita vel eligendi sed explicabo molestiae voluptatibus nam soluta id libero nemo ratione, sunt iste veritatis ex dignissimos est sapiente reiciendis obcaecati.
+                                </p>
+                                <div class="testimonial-box-details">
+                                    <div class="imgBx">
+                                        <img src="./assets/images/logos/service-2.png" alt="student-img">
+                                    </div>
+                                    <h5>Amadou Bailo Bah <br><span>Designer</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-box">
+                            <img src="./assets/images/logos/quote.png" class="quote" alt="quote">
+                            <div class="testimonial-box-content">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita vel eligendi sed explicabo molestiae voluptatibus nam soluta id libero nemo ratione, sunt iste veritatis ex dignissimos est sapiente reiciendis obcaecati.
+                                </p>
+                                <div class="testimonial-box-details">
+                                    <div class="imgBx">
+                                        <img src="./assets/images/logos/service-2.png" alt="student-img">
+                                    </div>
+                                    <h5>Amadou Bailo Bah <br><span>Designer</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-box">
+                            <img src="./assets/images/logos/quote.png" class="quote" alt="quote">
+                            <div class="testimonial-box-content">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita vel eligendi sed explicabo molestiae voluptatibus nam soluta id libero nemo ratione, sunt iste veritatis ex dignissimos est sapiente reiciendis obcaecati.
+                                </p>
+                                <div class="testimonial-box-details">
+                                    <div class="imgBx">
+                                        <img src="./assets/images/logos/service-2.png" alt="student-img">
+                                    </div>
+                                    <h5>Amadou Bailo Bah <br><span>Designer</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========Social-Section==========-->
+    <section class="capstone" id="capstone">
+        <div class="container">
+            <div class="section-heading col-lg-6 offset-lg-3">
+                <h4>Students <span>Capstone</span></h4>
+                <p>
+                    Our courses are design to equip you with the skill and knowledge to thrive in today's
+                    tech deriven landscape.
+                </p>
+            </div>
+            <div class="capstone-content">
+                <div class="trainer-grid">
+                    <div class="trainer-card">
+                        <img src="./assets/images/home-imgs/project-img1.jpg" alt="Project-img">
+                    </div>
+                    <div class="trainer-card">
+                        <div class="trainer-content">
+                            <h4>Project-Name</h4>
+                            <h6>description</h6>
+                            <hr>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro doloremque 
+                                delectus velit perferendis ex, adipisci quidem nihil consectetur ducimus.
+                            </p>
+                            <div class="trainer-socials">
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="./assets/images/home-imgs/project-img2.jpg" alt="Project-img">
+                    </div>
+                    <div class="trainer-card">
+                        <div class="trainer-content">
+                            <h4>Project-Name</h4>
+                            <h6>description</h6>
+                            <hr>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro doloremque 
+                                delectus velit perferendis ex, adipisci quidem nihil consectetur ducimus.
+                            </p>
+                            <div class="trainer-socials">
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="./assets/images/home-imgs/project-img3.jpg" alt="Project-img">
+                    </div>
+                    <div class="trainer-card">
+                        <div class="trainer-content">
+                            <h4>Project-Name</h4>
+                            <h6>description</h6>
+                            <hr>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro doloremque 
+                                delectus velit perferendis ex, adipisci quidem nihil consectetur ducimus.
+                            </p>
+                            <div class="trainer-socials">
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==========Footer-Section=========-->
+    <footer class="footer-distributed" id="footer">
+        <div class="footer-left">
+            <h3>Gomindz</h3>
+            <p class="footer-links">
+                <a href="#home">Home</a>
+                |
+                <a href="#courses">Courses</a>
+                |
+                <a href="#about">About</a>
+                |
+                <a href="#testimonial">Testimonials</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2024 
+                <strong>Gomindz</strong> All rights reserved
             </p>
         </div>
-        <div class="overview-grid">
-            <div class="overview-card">
-                <span><img src="./assets/images/logos/overview-1.png" alt="overview-icons"></span>
-                <div>
-                    <h4>Industry Dervien Curriculum</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam commodi, id facilis, soluta corrupti vitae nihil iste itaque non, </p>
-                </div>
+        <div class="footer-center">
+            <div>
+                <i class="r-icons ri-map-pin-line"></i>
+                <p><span>Kairaba Avenue, </span>Kanifing</p>
             </div>
-            <div class="overview-card">
-                <span><img src="./assets/images/logos/overview-1.png" alt="overview-icons"></span>
-                <div>
-                    <h4>Industry Dervien Curriculum</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam commodi, id facilis, soluta corrupti vitae nihil iste itaque non, </p>
-                </div>
+            <div>
+                <i class="r-icons ri-phone-line"></i>
+                <p>+220 3696325 / 5293353</p>
             </div>
-            <div class="overview-card">
-                <span><img src="./assets/images/logos/overview-1.png" alt="overview-icons"></span>
-                <div>
-                    <h4>Industry Dervien Curriculum</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam commodi, id facilis, soluta corrupti vitae nihil iste itaque non, </p>
-                </div>
-            </div>
-            <div class="overview-card">
-                <span><img src="./assets/images/logos/overview-1.png" alt="overview-icons"></span>
-                <div>
-                    <h4>Industry Dervien Curriculum</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam commodi, id facilis, soluta corrupti vitae nihil iste itaque non, </p>
-                </div>
+            <div>
+                <i class="r-icons ri-mail-line"></i>
+                <p><a href="#">info@gomindz.gm</a></p>
             </div>
         </div>
-    </section>  -->
-
-    <!--===================courses-section===================-->
-
-
-    <!--==================testimonial-section================-->
-    <!-- <section id="testimonial">
-        <div class="section-width"></div>
-    </section> -->
- 
-
-    <!--==================testimonial-section================-->
-    <section id="event">
-        <div class="section-width"></div>
-    </section>
-   
-
+        <div class="footer-right">
+            <p class="footer-company-about">
+                Our curriculum is designed to be hands-on and industry relevant, ensuring 
+                that our students not only gain theoretical knowledge but also practical skills that are 
+                in high demand in today's job market.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="ri-facebook-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-linkedin-box-line"></i></a>
+                <a href="#"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+    </footer> 
     <!--==========================main-body==========================-->
 
 
+
     <!--============================scripts==========================-->
-    <!--=====bootstrap-js=====-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--========jquery========-->
     <script src="./assets/js/jquery3.7.1.js"></script>
+        
+    <!--=======Swapper JS=====-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--=====bootstrap-js=====-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="./assets/js/owl.carousel.min.js"></script>
     <!-- =====custom-js=======-->
